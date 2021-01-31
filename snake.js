@@ -9,6 +9,8 @@ const rightBtn = document.getElementById('right')
 const intro = document.getElementById('intro')
 const main = document.getElementById('main')
 const head = document.getElementById('head')
+const muteBtn = document.getElementById('mutebtn')
+const soundOnBtn = document.getElementById('soundonbtn')
 
 var bleep = new Audio();
 bleep.src = "sound/jump.wav";
@@ -186,3 +188,30 @@ start.addEventListener('click', startGame)
 		}
 
 
+muteBtn.addEventListener('click' , function mute(){
+
+
+	startMusic.muted = true;
+	bleep.muted = true;
+	levelup.muted = true;
+	gameOver.muted = true;
+	eat.muted = true;
+	muteBtn.style.backgroundColor = "maroon";
+	soundOnBtn.style.backgroundColor = "#FFDF00";
+
+
+})
+
+soundOnBtn.addEventListener('click' , function soundOn(){
+
+
+	startMusic.muted = false;
+	bleep.muted = false;
+	levelup.muted = false;
+	gameOver.muted = false;
+	eat.muted = false;
+	soundOnBtn.style.backgroundColor = "maroon";
+	muteBtn.style.backgroundColor = "#FFDF00";
+
+
+})
