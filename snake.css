@@ -139,3 +139,20 @@ h2{
 	transition: 1s;
 	background-color: maroon;
 }
+
+.volume{
+
+	box-shadow: 1px 1px 5px midnightblue;
+	background-color: #FFDF00;
+	padding : 5px 8px;
+	color: snow;
+	border-radius: 100px;
+	outline:none;
+	font-weight: 700;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	margin : 3px 5px;
+	box-shadow: 1px 1px 1px black;
+
+}
